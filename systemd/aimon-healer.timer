@@ -1,0 +1,10 @@
+[Unit]
+Description=Trigger AI Self-Healing Engine Every 2 Minutes
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=2min
+Unit=aimon-healer.service
+
+[Install]
+WantedBy=timers.target

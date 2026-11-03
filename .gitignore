@@ -1,0 +1,7 @@
+venv/
+*.log
+*.joblib
+*.csv
+*.bin
+__pycache__/
+.DS_Store

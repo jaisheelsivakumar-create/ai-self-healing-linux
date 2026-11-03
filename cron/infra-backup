@@ -1,0 +1,1 @@
+0 2 * * * root /usr/local/sbin/backup.sh >> /srv/logs/cron-backup.log 2>&1

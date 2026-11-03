@@ -1,0 +1,14 @@
+[Unit]
+Description=AI Infrastructure Failure Prediction and Self-Healing Engine
+After=network.target
+
+[Service]
+Type=oneshot
+User=vboxuser
+WorkingDirectory=/opt/aimon
+ExecStart=/opt/aimon/venv/bin/python3 /opt/aimon/bin/healer.py
+StandardOutput=append:/srv/logs/healer.log
+StandardError=append:/srv/logs/healer.log
+
+[Install]
+WantedBy=multi-user.target
